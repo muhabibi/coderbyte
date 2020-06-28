@@ -10,7 +10,15 @@ def StockPicker(arr):
         largest = max(delta, largest)
       else:
         continue
-  return largest
+  
+  if largest==0 :
+    largest = -1
 
-# keep this function call here 
-print(StockPicker(input()))
+  return largest
+ 
+def main():
+  arr=[10, 9, 8, 2]
+  print(StockPicker(arr))
+
+if __name__ == "__main__":
+    main()
